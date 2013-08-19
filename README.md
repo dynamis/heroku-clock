@@ -14,7 +14,9 @@ git push heroku master
 
 # run clock process (no web process)
 # note: App must be deployed before dynos can be scaled
-heroku ps:scale web=0 clock=1
+heroku ps:scale clock=1
+# stop if you run web process
+# heroku ps:scale web=0 clock=1
 
 
 # status check
